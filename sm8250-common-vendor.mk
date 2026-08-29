@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
-    vendor/xiaomi/sm8250-common/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/media/audio/ui/popup_cangmen_down.ogg:$(TARGET_COPY_OUT_SYSTEM_EXT)/media/audio/ui/popup_cangmen_down.ogg \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/media/audio/ui/popup_cangmen_up.ogg:$(TARGET_COPY_OUT_SYSTEM_EXT)/media/audio/ui/popup_cangmen_up.ogg \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/media/audio/ui/popup_chilun_down.ogg:$(TARGET_COPY_OUT_SYSTEM_EXT)/media/audio/ui/popup_chilun_down.ogg \
@@ -542,7 +541,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
-    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
+    vendor.qti.hardware.wifidisplaysession_aidl-V2-ndk \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     CACertService \
@@ -627,7 +626,7 @@ PRODUCT_PACKAGES += \
     xtwifi-client \
     xtwifi-inet-agent \
     dpmd \
-    wfdservice
+    wfdservice64
 
 PRODUCT_PACKAGES += \
     system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
